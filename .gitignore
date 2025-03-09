@@ -55,3 +55,6 @@ coverage/
 # Zips
 *.7z
 *.zip
+
+#Nuxt
+.nuxt/
