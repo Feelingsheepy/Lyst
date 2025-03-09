@@ -1,0 +1,36 @@
+{
+  "name": "lyst-api-rest",
+  "version": "1.0.0",
+  "description": "Rest Api for Lyst",
+  "author": "dhusted",
+  "private": true,
+  "main": "dist/bootstrap.js",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "dev": "cross-env NODE_ENV=development nodemon -w ./dist",
+    "debug": "cross-env NODE_ENV=development nodemon -w ./dist --inspect=127.0.0.1:9231"
+  },
+  "nodemonConfig": {
+    "delay": 1500
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "inversify": "^5.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "inversify-express-utils": "^6.3.2",
+    "reflect-metadata": "^0.1.13",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "@types/helmet": "^0.0.42",
+    "@types/node": "^10.12.21",
+    "@types/socket.io-client": "^1.4.32",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}

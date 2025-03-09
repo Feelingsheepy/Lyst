@@ -1,0 +1,23 @@
+{
+  "name": "lyst-entity-service",
+  "version": "1.0.0",
+  "description": "Service to fetch entities from the database servie",
+  "author": "dhusted",
+  "private": true,
+  "main": "dist/bootstrap.js",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "dev": "cross-env NODE_ENV=development nodemon -w ./dist",
+    "debug": "cross-env NODE_ENV=development nodemon -w ./dist --inspect=127.0.0.1:9237"
+  },
+  "nodemonConfig": {
+    "delay": 1500
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.3.11",
+    "@types/node": "^10.17.5",
+    "cross-env": "^5.2.1",
+    "nodemon": "^1.19.4"
+  }
+}

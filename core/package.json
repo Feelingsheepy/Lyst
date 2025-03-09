@@ -1,0 +1,17 @@
+{
+  "name": "lyst-core",
+  "version": "1.0.0",
+  "description": "Core for Lyst",
+  "author": "dhusted",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "clean": "rimraf node_modules package-lock.json tsconfig.tsbuildinfo dist"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "rimraf": "^6.0.1",
+    "typescript": "~4.9.5"
+  }
+}

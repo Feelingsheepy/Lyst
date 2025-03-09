@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": "."
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "../core-services"
+    },
+    {
+      "path": "../core"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Test Communication Service: Attach",
+      "address": "localhost",
+      "port": 9229,
+      "localRoot": "${workspaceFolder}/test-communication-service",
+      "remoteRoot": "/usr/src/app",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "restart": true
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Validation Service: Attach",
+      "address": "localhost",
+      "port": 9230,
+      "localRoot": "${workspaceFolder}/validation-service",
+      "remoteRoot": "/usr/src/app",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "restart": true
+    }
+  ]
+}

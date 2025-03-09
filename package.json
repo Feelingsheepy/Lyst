@@ -1,0 +1,13 @@
+{
+  "name": "lyst",
+  "private": true,
+  "workspaces": [
+    "core",
+    "core-services",
+    "validation-service"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces"
+  }
+}

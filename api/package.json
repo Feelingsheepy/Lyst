@@ -1,0 +1,31 @@
+{
+  "name": "lyst-api",
+  "version": "1.0.0",
+  "description": "Api for Lyst",
+  "author": "dhusted",
+  "private": true,
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "dev": "cross-env NODE_ENV=development nodemon -w ./dist",
+    "debug": "cross-env NODE_ENV=development nodemon -w ./dist --inspect=127.0.0.1:9230"
+  },
+  "nodemonConfig": {
+    "delay": 1500
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "socket.io-client": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/socket.io": "^2.1.2",
+    "@types/socket.io-client": "^1.4.32",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,49 @@
+{
+    "folders":  [
+      {
+        "path": "lyst-website"
+      },
+      {
+        "path": "api"
+      },
+      {
+        "path": "core"
+      },
+      {
+        "path": "database"
+      },
+      {
+        "path": "api-rest"
+      },
+      {
+        "path": "test-client"
+      },
+      {
+        "path": "test-communication-service"
+      },
+      {
+        "path": "test-service"
+      },
+      {
+        "path": "core-services"
+      },
+      {
+        "path": "database-service"
+      },
+      {
+        "path": "entity-service"
+      },
+      {
+        "path": "validation-service"
+      },
+      {
+        "path": "core-services-website"
+      },
+      {
+        "path": "core-website"
+      }
+    ],
+    "settings":  {
+
+                 }
+}

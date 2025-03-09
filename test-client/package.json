@@ -1,0 +1,22 @@
+{
+  "name": "lyst-test-client",
+  "version": "1.0.0",
+  "description": "Client to test communication service",
+  "author": "dhusted",
+  "private": true,
+  "main": "dist/bootstrap.js",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "dev": "cross-env NODE_ENV=development nodemon -w ./dist",
+    "debug": "cross-env NODE_ENV=development nodemon -w ./dist --inspect=127.0.0.1:9233"
+  },
+  "nodemonConfig": {
+    "delay": 1500
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}

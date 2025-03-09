@@ -1,0 +1,46 @@
+version: '3.4'
+
+services:
+  tcs-dev:
+    image: tcs-dev
+    build:
+      context: test-communication-service
+      target: development
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./test-communication-service:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      NODE_ENV: development
+      DEBUG: true
+    ports:
+      - 3000:3000
+      - 9229:9229
+    expose: 
+      - 3000
+    command: npm run debug
+
+  validation-service:
+    image: validation-service-dev
+    build:
+      context: .
+      target: development
+      dockerfile: ./validation-service/Dockerfile
+    volumes:
+      - ./validation-service:/usr/src/app
+      - ./core-services:/usr/src/core-services
+      - ./core:/usr/src/core
+      - validation-service-node-modules:/usr/src/app/node_modules
+      - core-services-node-modules:/usr/src/core-services/node_modules
+      - core-node-modules:/usr/src/core/node_modules
+    environment:
+      NODE_ENV: development
+      DEBUG: true
+    ports:
+      - 9230:9229
+    command: npm run debug
+
+volumes:
+  validation-service-node-modules:
+  core-services-node-modules:
+  core-node-modules:

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "../core"
+    }
+  ]
+}

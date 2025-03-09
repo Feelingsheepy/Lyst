@@ -1,0 +1,34 @@
+{
+  "name": "lyst-database",
+  "version": "1.0.0",
+  "description": "Database for Lyst",
+  "author": "dhusted",
+  "private": true,
+  "main": "dist/bootstrap.js",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w",
+    "dev": "cross-env NODE_ENV=development nodemon -w ./dist",
+    "debug": "cross-env NODE_ENV=development nodemon --inspect -w ./dist"
+  },
+  "nodemonConfig": {
+    "delay": 1500
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "express": "^4.16.3",
+    "helmet": "^3.15.0",
+    "inversify": "^5.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "mongodb": "^3.1.10",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^2.2.0",
+    "validate.js": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.1.19",
+    "@types/socket.io": "^2.1.2",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
