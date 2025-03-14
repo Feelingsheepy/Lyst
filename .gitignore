@@ -7,7 +7,8 @@ shrinkwrap.yaml
 
 # Build outputs
 dist/
-build/
+/build/
+/*/build/
 *.tsbuildinfo
 
 # IDE - VSCode
